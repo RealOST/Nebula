@@ -26,9 +26,9 @@ public class ParallaxLayer : MonoBehaviour {
         if (Mathf.Abs(cameraTrans.position.x - transform.position.x )> textUnitSizex)
         {
             //偏移量
-            float offsetPositionX = (cameraTrans.position.x - transform.position.x)%textUnitSizex;
+            // float offsetPositionX = (cameraTrans.position.x - transform.position.x)%textUnitSizex;
             //移动背景图
-            transform.position = new Vector3(cameraTrans.position.x+ offsetPositionX, transform.position.y);
+            transform.position = new Vector3(cameraTrans.position.x, transform.position.y);
             
         }
     }
